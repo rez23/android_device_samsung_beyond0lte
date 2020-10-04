@@ -1,6 +1,7 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
+
 # Product API level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
@@ -11,6 +12,7 @@ $(call inherit-product, device/samsung/beyond0lte/device.mk)
 # vendor/lineage/config/common_full_phone.mk
 TARGET_SCREEN_HEIGHT := 2280
 TARGET_SCREEN_WIDTH := 1080
+
 # vendor/lineage/config/common.mk
 TARGET_BOOTANIMATION_HALF_RES := true
 
@@ -18,7 +20,7 @@ TARGET_BOOTANIMATION_HALF_RES := true
 $(call inherit-product, vendor/rr/config/common_full_phone.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := lineage_beyond0lte
+PRODUCT_NAME := rr_beyond0lte
 PRODUCT_DEVICE := beyond0lte
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-G970F
